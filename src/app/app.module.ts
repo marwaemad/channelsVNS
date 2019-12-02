@@ -9,7 +9,7 @@ import { OrdersDetailsComponent } from './orders/orders-details/orders-details.c
 import { CardComponent } from './shared/card/card.component';
 import { DataService } from './shared/data.service';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
