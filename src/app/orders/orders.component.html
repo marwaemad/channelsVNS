@@ -1,1 +1,18 @@
-<p>orders works!</p>
+<div class="row">
+    <div class="col-6 " *ngFor="let order of orderWithPrice" >
+        <div class="order-container"  [routerLink]="['/orderDetails',order.OrderId]">
+            <div class="row">
+                <div class="col-6">
+                    <div class="title">
+                        <h5>Order Id: <span>{{order.OrderId}}</span></h5>
+                        <p>Order Date: <span>{{order.OrderDate|date:'d/M/y'}}</span></p>
+                    </div>
+                </div>
+                <div class="col-6">
+                        <h5>Total Price: <span>{{order.OrderPrice |number:'1.1-3'}}</span></h5>
+                        <p>Payment Method: <span>{{order.PaymentType}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

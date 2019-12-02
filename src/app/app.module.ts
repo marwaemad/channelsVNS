@@ -6,6 +6,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrdersDetailsComponent } from './orders/orders-details/orders-details.component';
+import { CardComponent } from './shared/card/card.component';
+import { DataService } from './shared/data.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,14 @@ import { OrdersDetailsComponent } from './orders/orders-details/orders-details.c
     NavbarComponent,
     ProductComponent,
     OrdersComponent,
-    OrdersDetailsComponent
+    OrdersDetailsComponent,
+    CardComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

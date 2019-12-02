@@ -1,0 +1,61 @@
+.card-container {
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  img {
+    width: auto;
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
+  .card-details {
+    .card-name {
+      float: left;
+      font-size: 20px;
+      color: black;
+      font-family: arial;
+      margin: 10px 0;
+      
+    }
+    .card-price {
+      float: right;
+      font-size: 20px;
+      margin: 10px 0;
+      color: blue;
+      font-weight: 500;
+    }
+  }
+  .stock {
+    margin: 10px 0;
+    .in-stock,
+    .out-of-stock {
+      color: #fff;
+      font-size: 15px;
+      padding: 5px 15px;
+      float: left;
+      border-radius: 10px;
+    }
+    .in-stock {
+      background-color: green;
+    }
+    .out-of-stock {
+      background-color: red;
+    }
+    .avaliable {
+      float: right;
+      font-size: 18px;
+    }
+  }
+  .add {
+    margin: auto;
+    display: block;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid orange;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

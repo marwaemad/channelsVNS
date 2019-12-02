@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-lg-3" *ngFor="let item of card">
+        <div class="card-container">
+            <div class="row">
+                <div class="col-12">
+                    <img [src]="item.ProductImg" alt="" class="rounded">
+                </div>
+                <div class="col-12">
+                    <div class="card-details">
+                        <span class="card-name">
+                            {{item.ProductName}}
+                        </span>
+                        <span class="card-price">{{item.ProductPrice}} $</span>
+                    </div>
+                </div>
+                <div class="stock col-12" *ngIf="item.AvailablePieces > 0"> <span class="in-stock">inStock</span> <span
+                        class="avaliable">{{item.AvailablePieces}}</span>
+                </div>
+                <div class="stock col-12" *ngIf="item.AvailablePieces <= 0"><span class="out-of-stock"> out of Stock
+                    </span></div>
+                <div class="col-12">
+                    <button class="add" (click)="add(item)" [disabled]="item.AvailablePieces <= 0">add to cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
