@@ -1,0 +1,33 @@
+.title {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+p {
+  font-weight: bold;
+  span {
+    font-weight: 300;
+    margin: 0 10px;
+    color: black;
+  }
+}
+.order-Details-container {
+  border-right: 2px solid lightgray;
+  padding: 10px;
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.products-details {
+  padding: 10px;
+  .title {
+    margin: 20px 0;
+  }
+  border-top: 2px solid lightgray;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .order-Details-container {
+    border-right:none;
+  }
+}
